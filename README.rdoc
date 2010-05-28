@@ -1,32 +1,47 @@
 = wreckster
 
-* FIX (url)
+* http://github.com/tenderlove/wreckster
 
 == DESCRIPTION:
 
-FIX (describe your package)
+Wreckster is an API for accessing
+Rexster[http://wiki.github.com/tinkerpop/rexster/].
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* Lists graph traversals
+* Accesses Rank based traversals
+
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+  graph = Wreckster::Graph.new('http://localhost:8182/')
+
+  # List the traversals available in this graph server
+  graph.traversals.each do |t|
+    puts t.name
+  end
+
+  # Execute a traversal with some parameters
+  traversal = graph.traversals.first
+  traversal.find('song.name' => 'SUGAREE').each do |song|
+    p song
+  end
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* json
+* net-http-persistent
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* sudo gem install wreckster
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2010 FIX
+Copyright (c) 2010 Aaron Patterson
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
