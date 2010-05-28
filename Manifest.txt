@@ -1,0 +1,12 @@
+.autotest
+CHANGELOG.rdoc
+Manifest.txt
+README.rdoc
+Rakefile
+lib/wreckster.rb
+lib/wreckster/graph.rb
+lib/wreckster/object.rb
+lib/wreckster/traversal.rb
+test/helper.rb
+test/test_object.rb
+test/test_wreckster.rb
