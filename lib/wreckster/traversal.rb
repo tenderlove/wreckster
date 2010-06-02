@@ -1,3 +1,5 @@
+require 'cgi'
+
 module Wreckster
   class Traversal
     attr_reader :name
@@ -8,7 +10,7 @@ module Wreckster
     end
 
     def find options = {}
-      params = options.map { |k,v| "#{k}=#{v}" }.join("&")
+      params = options.map { |k,v| "#{k}=#{CGI.escape(v.to_s)}" }.join("&")
       map = JSON.parse(
         Wreckster.connection.request(URI.parse(url + "?#{params}")).body
       )

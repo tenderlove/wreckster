@@ -1,7 +1,7 @@
 require 'helper'
 
 module Wreckster
-  class TestObject < Test::Unit::TestCase
+  class TestObject < Wreckster::TestCase
     def test_identifier
       obj = Wreckster::Object.new 'foo', '_id' => 100
       assert_equal 100, obj.identifier
