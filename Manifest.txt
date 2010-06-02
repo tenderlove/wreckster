@@ -9,4 +9,5 @@ lib/wreckster/object.rb
 lib/wreckster/traversal.rb
 test/helper.rb
 test/test_object.rb
+test/test_traversal.rb
 test/test_wreckster.rb
