@@ -35,5 +35,9 @@ module Wreckster
     {"ranks":[{"grateful\/co-follows-rank":5.0,"_id":"35","name":"WAY TO GO HOME","song_type":"original","performances":92,"type":"song"},{"grateful\/co-follows-rank":8.0,"_id":"36","name":"SAINT OF CIRCUMSTANCE","song_type":"original","performances":222,"type":"song"}],"query_time":1,"success":true,"size":2,"total_rank":2777.0}
       eojson
     end
+
+    def rank_traversal
+      '{"query_time":5,"score":58.0,"success":true}'
+    end
   end
 end

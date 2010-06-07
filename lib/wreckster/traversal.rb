@@ -14,6 +14,8 @@ module Wreckster
       map = JSON.parse(
         Wreckster.connection.request(URI.parse(url + "?#{params}")).body
       )
+      return map['score'] if map.key?('score')
+
       map['ranks'].map { |thing| Wreckster::Object.new(name, thing) }
     end
 

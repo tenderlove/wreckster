@@ -1,3 +1,7 @@
+=== 1.0.2
+
+* Score traversals are supported
+
 === 1.0.1
 
 * CGI escaping query parameters to traversals

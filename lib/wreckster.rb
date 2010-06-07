@@ -7,7 +7,7 @@ require 'wreckster/traversal'
 require 'wreckster/object'
 
 module Wreckster
-  VERSION = '1.0.1'
+  VERSION = '1.0.2'
 
   @connection = Net::HTTP::Persistent.new
   class << self
